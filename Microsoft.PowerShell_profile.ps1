@@ -1,7 +1,5 @@
-$touch_username = "User"
-
 function touch {
-	$version = "v2.3.11"
+	$version = "v2.3.12"
 
     $fflag = 1
 
@@ -46,7 +44,7 @@ function touch {
 		# Updating
 		elseif($args[$i] -eq "update") {
 			$cdir = Get-Location
-			Set-Location -Path "C:\Users\$touch_username\Documents\WindowsPowerShell"
+			Set-Location -Path "C:\Users\" + $profile.Replace("\Microsoft.PowerShell_profile.ps1", "") +"\Documents\WindowsPowerShell"
 			Start-Sleep -Milliseconds 250
 
 			git fetch --all 
