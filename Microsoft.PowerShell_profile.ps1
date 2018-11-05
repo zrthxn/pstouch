@@ -1,5 +1,5 @@
 function touch {
-	$version = "v2.3.5"
+	$version = "v2.3.6"
 
     $fflag = 1
 
