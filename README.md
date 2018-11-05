@@ -28,8 +28,18 @@ Set-ExecutionPolicy RemoteSigned -Scope LocalMachine
 ```
 7. Close all PS Windows
 
-## Useage
-The first thing you should do after installation is to set your username. To do this, open a PowerShell Window anywhere and run
+## Usage
+The syntax for this is very simple. You just have to say
 ```
-$touch_username = "<Your Local Account Username>"
-``` 
+touch [flags] [extn] [args]
+```
+
+The current available flags are
+- **--help or -h** : Use this anytime to view help
+- **--version or -v** : Use this to check the version number. We use symantic versioning :)
+- **--extn or -e** : Use this to make lots of files with a particular extension
+
+To update Touch, you just have to say
+```
+touch update
+```
