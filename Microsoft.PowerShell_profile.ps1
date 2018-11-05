@@ -1,5 +1,5 @@
 function touch {
-	$version = "v2.3.6"
+	$version = "v2.3.7"
 
     $fflag = 1
 
@@ -47,7 +47,8 @@ function touch {
 			Set-Location -Path "C:\Users\Alisamar\Documents\WindowsPowerShell"
 			Start-Sleep -Milliseconds 250
 
-			git pull origin master
+			git fetch --all 
+			git reset --hard origin/master
 
 			Set-Location -Path $cdir
 
