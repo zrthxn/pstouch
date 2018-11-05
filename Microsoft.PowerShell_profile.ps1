@@ -1,5 +1,5 @@
 function touch {
-	$version = "v2.3.12"
+	$version = "v2.4.1"
 
     $fflag = 1
 
@@ -47,19 +47,25 @@ function touch {
 			Set-Location -Path $profile.Replace("\Microsoft.PowerShell_profile.ps1", "")
 			Start-Sleep -Milliseconds 250
 
-			git fetch --all 
-			git reset --hard origin/master
+			if($args[$i + 1] -eq "--hard") {
+				git fetch --all
+				git reset --hard origin/master
+			} 
+			else {
+				git pull origin master
+			}
 
 			Set-Location -Path $cdir
 			
+			Start-Sleep -Milliseconds 150
 			. $profile
 			Start-Sleep -Milliseconds 100
 
 			Clear-Host
-			Write-Output "ZRTHXN Labs : Updated Touch"			
-			Write-Output "Restart PowerShell or run : . `$profile"
+			Write-Output "ZRTHXN Labs"
+			# Write-Output "Restart PowerShell or run : . `$profile"
 			# TODO : Auto-Reload of $profile
-			# Write-Output "Updated : Touch Version $version"
+			Write-Output "Updated : Touch Version $version"
 			Write-Output ""
             $fflag = 0
             break
