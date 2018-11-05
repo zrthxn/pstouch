@@ -1,5 +1,5 @@
 function touch {
-	$version = "v2.3.8"
+	$version = "v2.3.9"
 
     $fflag = 1
 
@@ -51,8 +51,8 @@ function touch {
 			git reset --hard origin/master
 
 			Set-Location -Path $cdir
-
 			Start-Sleep -Milliseconds 250
+			
 			. $profile
 
 			Clear-Host
