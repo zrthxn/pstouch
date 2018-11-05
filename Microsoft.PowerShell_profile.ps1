@@ -55,6 +55,7 @@ function touch {
 			Start-Sleep -Milliseconds 250
 			. $profile
 
+			Clear-Host
 			Write-Output "ZRTHXN Labs"
 			Write-Output "Updated : Touch Version $version"
 			Write-Output ""
