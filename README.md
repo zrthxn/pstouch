@@ -5,6 +5,9 @@ This is a small CLI for PowerShell on Windows to create empty files.<br>
 Touch is available in Linux systems and is a useful tool to create lots of files quickly. It's particularly helpful to web developers and 
 other similar fields where a single project contains lots of files.
 
+**Touch can create ANY type of file with ANY extension,** but it will be an empty file.
+
+
 ## Installation
 You will need to have installed Git for this to work.
 
@@ -27,6 +30,7 @@ git clone http://github.com/zrthxn/pstouch.git WindowsPowerShell
 Set-ExecutionPolicy RemoteSigned -Scope LocalMachine
 ```
 7. Close all PS Windows
+
 
 ## Usage
 The syntax for this is very simple. You just have to say
