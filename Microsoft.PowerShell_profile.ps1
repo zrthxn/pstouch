@@ -1,5 +1,5 @@
 function touch {
-	$version = "v2.1.3"
+	$version = "v2.1.5"
 
     $fflag = 1
 
@@ -43,7 +43,8 @@ function touch {
 		}
 		# Updating
 		elseif($args[$i] -eq "update") {
-			Set-Location -Path "C:\Users\Alisamar\Documents\WindowsPowerShell"
+			[System.IO.Directory]::SetCurrentDirectory("C:\Users\Alisamar\Documents\WindowsPowerShell")
+			# Set-Location -Path "C:\Users\Alisamar\Documents\WindowsPowerShell"
 
 			git pull origin master
 
