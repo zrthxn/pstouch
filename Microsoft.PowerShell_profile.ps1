@@ -44,7 +44,7 @@ function touch {
 		# Updating
 		elseif($args[$i] -eq "update") {
 			$cdir = Get-Location
-			Set-Location -Path "C:\Users\" + $profile.Replace("\Microsoft.PowerShell_profile.ps1", "") +"\Documents\WindowsPowerShell"
+			Set-Location -Path $profile.Replace("\Microsoft.PowerShell_profile.ps1", "")
 			Start-Sleep -Milliseconds 250
 
 			git fetch --all 
