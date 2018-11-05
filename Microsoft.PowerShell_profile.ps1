@@ -52,6 +52,7 @@ function touch {
 
 			Set-Location -Path $cdir
 
+			Start-Sleep -Milliseconds 250
 			. $profile
 
 			Write-Output "ZRTHXN Labs"
