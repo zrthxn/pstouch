@@ -1,5 +1,5 @@
 # PowerShell Touch
-### v2.3.10
+### v2.4.2
 
 This is a small CLI for PowerShell on Windows to create empty files.<br>
 Touch is available in Linux systems and is a useful tool to create lots of files quickly. It's particularly helpful to web developers and 
